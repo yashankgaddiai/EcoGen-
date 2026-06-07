@@ -47,8 +47,16 @@ const Navbar: React.FC = () => {
     <>
       <nav id="nav-header" className={`fixed w-full z-50 px-6 lg:px-16 transition-all duration-700 cubic-bezier(0.22, 1, 0.36, 1) ${navClass}`}>
         <div className="max-w-[1600px] mx-auto flex justify-between items-center">
-          <Link id="nav-logo" to="/" className={`font-serif italic text-2xl md:text-3xl font-bold transition-colors tracking-tighter ${logoClass}`}>
-            EcoGen Retreat
+          <Link id="nav-logo" to="/" className="flex items-center gap-4 group">
+            <img 
+              src="https://res.cloudinary.com/dsqmjneyd/image/upload/q_auto/f_auto/v1780814150/logo_kfset6.jpg" 
+              alt="EcoGen Retreat Logo" 
+              className={`object-contain rounded-full border border-white/20 shadow-lg group-hover:scale-105 transition-all duration-700 ${scrolled ? 'h-14 md:h-16' : 'h-20 md:h-24'}`}
+              referrerPolicy="no-referrer"
+            />
+            <span className={`font-serif italic text-2xl md:text-3xl font-bold transition-colors tracking-tighter ${logoClass}`}>
+              EcoGen Retreat
+            </span>
           </Link>
 
           <div className="hidden lg:flex items-center space-x-10">
@@ -78,7 +86,15 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`fixed inset-0 bg-white z-[60] flex flex-col p-8 transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} shadow-2xl`}>
         <div className="flex justify-between items-center mb-12">
-          <span className="font-serif italic text-3xl font-bold text-forest">EcoGen Retreat</span>
+          <Link to="/" onClick={toggleMenu} className="flex items-center gap-4">
+            <img 
+              src="https://res.cloudinary.com/dsqmjneyd/image/upload/q_auto/f_auto/v1780814150/logo_kfset6.jpg" 
+              alt="EcoGen Retreat Logo" 
+              className="h-16 w-auto object-contain rounded-full border border-forest/10 shadow-md"
+              referrerPolicy="no-referrer"
+            />
+            <span className="font-serif italic text-2xl md:text-3xl font-bold text-forest">EcoGen Retreat</span>
+          </Link>
           <button onClick={toggleMenu} className="w-14 h-14 rounded-full bg-forest text-white flex items-center justify-center hover:bg-forestDeep transition-all shadow-xl hover:scale-110 hover:rotate-90 group">
             <X className="w-8 h-8 group-hover:scale-110 transition-transform" />
           </button>

@@ -14,7 +14,15 @@ const Footer: React.FC = () => {
         
         {/* Column 1: Brand & Layout Navigation */}
         <div className="lg:col-span-4 space-y-6">
-          <h2 className="italic font-bold text-4xl md:text-5xl tracking-tighter font-serif text-white">EcoGen Retreat</h2>
+          <div className="flex items-center gap-4">
+            <img 
+              src="https://res.cloudinary.com/dsqmjneyd/image/upload/q_auto/f_auto/v1780814150/logo_kfset6.jpg" 
+              alt="EcoGen Retreat Logo" 
+              className="h-20 md:h-24 w-auto object-contain rounded-full border border-white/25 shadow-lg"
+              referrerPolicy="no-referrer"
+            />
+            <h2 className="italic font-bold text-4xl md:text-5xl tracking-tighter font-serif text-white">EcoGen Retreat</h2>
+          </div>
           <p className="text-sm opacity-70 leading-relaxed max-w-sm">
             An exclusive, private eco-centric luxury resort in Koheda, Telangana, combining absolute comfort, pristine silence, and total privacy for your stays and celebrations.
           </p>

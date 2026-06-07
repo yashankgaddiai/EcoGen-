@@ -241,6 +241,13 @@ const Home: React.FC = () => {
                   The Ultimate Private Eco-Luxury Resort
                 </span>
                 <WeatherWidget />
+                <a 
+                  href="tel:+918106935999" 
+                  className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 hover:bg-white/25 hover:border-white/40 backdrop-blur-md border border-white/20 text-xs font-extrabold font-sans transition-all group shadow-md"
+                >
+                  <Phone className="w-3.5 h-3.5 text-gold group-hover:scale-110 transition-transform" /> 
+                  <span className="text-white">+91 8106935999</span>
+                </a>
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white tracking-tight leading-[1.05] font-bold">
@@ -251,19 +258,25 @@ const Home: React.FC = () => {
                 An exclusive private eco-retreat in Koheda, Telangana. Designed for peaceful multi-day stays, celebrations, and meaningful escapes where you enjoy absolute privacy.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start font-sans pt-4">
-                <Link 
-                  to="/booking" 
-                  className="bg-forest text-white border border-forest px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-gold hover:border-gold transition shadow-xl"
-                >
-                  Book Your Stay
-                </Link>
-                <a 
-                  href="#the-retreat" 
-                  className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-forest transition shadow-xl"
-                >
-                  Explore The Retreat
-                </a>
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start font-sans pt-4">
+                  <Link 
+                    to="/booking" 
+                    className="bg-forest text-white border border-forest px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-gold hover:border-gold transition shadow-xl"
+                  >
+                    Book Your Stay
+                  </Link>
+                  <a 
+                    href="#the-retreat" 
+                    className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-forest transition shadow-xl"
+                  >
+                    Explore The Retreat
+                  </a>
+                </div>
+                <div className="flex items-center justify-center xl:justify-start gap-2.5 font-sans text-xs text-white/80 pt-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
+                  <span>Direct Reservations / Inquiry: <a href="tel:+918106935999" className="text-gold font-extrabold hover:underline transition-all tracking-wider">+91 8106935999</a></span>
+                </div>
               </div>
             </motion.div>
           </div>
