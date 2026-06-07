@@ -8,7 +8,6 @@ import {
   Target, Zap, FlameKindling, ShieldAlert, CheckCircle2, ChevronDown
 } from 'lucide-react';
 import BookingWidget from '../components/BookingWidget';
-import WeatherWidget from '../components/WeatherWidget';
 import Lightbox from '../components/Lightbox';
 import { GOOGLE_SCRIPT_URL } from '../constants';
 
@@ -240,7 +239,6 @@ const Home: React.FC = () => {
                 <span className="inline-block px-5 py-2 rounded-full bg-forest/40 backdrop-blur-md border border-white/20 text-xs font-bold tracking-[0.3em] uppercase font-sans">
                   The Ultimate Private Eco-Luxury Resort
                 </span>
-                <WeatherWidget />
                 <a 
                   href="tel:+918106935999" 
                   className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 hover:bg-white/25 hover:border-white/40 backdrop-blur-md border border-white/20 text-xs font-extrabold font-sans transition-all group shadow-md"
